@@ -1,113 +1,53 @@
-<p align="center"><img src="assets/covers/14-retro-games-hub.jpg" alt="retro-games-hub 项目封面" width="100%"></p>
+<p align="center"><img src="assets/covers/14-retro-games-hub.jpg" alt="复古贪吃蛇 项目封面" width="100%"></p>
 
-<div align="center">
+<h1 align="center">复古贪吃蛇</h1>
 
-# 🐍 复古贪吃蛇
+<p align="center">HTML5 Canvas 写的像素风贪吃蛇，键盘与触屏都能玩</p>
 
-**经典复古风格 HTML5 贪吃蛇游戏**
+<p align="center">
+  <a href="http://games.aikex.ink/">在线玩</a> ·
+  <a href="https://github.com/aiyangdie/retro-games-hub">源码仓库</a>
+</p>
 
-[![GitHub](https://img.shields.io/badge/GitHub-Project-blue?logo=github)](https://github.com/aiyangtongxue/retro-games-hub)
-[![HTML5](https://img.shields.io/badge/HTML5-Canvas-E34F26?logo=html5)](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+## 简介
 
-</div>
+用 ES6 Class 重构的经典贪吃蛇：深色复古配色、Courier 字体，吃得越多跑得越快。最高分存本地，关掉浏览器也不丢。
 
----
+## 功能
 
-## 📌 项目简介
+- **经典玩法**：方向键控蛇，吃食物变长
+- **动态难度**：每吃一个食物提速一次
+- **最高分**：localStorage 持久化
+- **移动端**：响应式虚拟方向键，触屏可玩
+- **碰撞判定**：撞墙或撞到自己即结束
+- **代码结构**：`SnakeGame` 类封装状态与主循环，便于改玩法
 
-复古贪吃蛇是一款采用 HTML5 Canvas 与面向对象架构开发的经典贪吃蛇游戏。项目使用 ES6 Class 封装游戏逻辑，代码结构清晰，具备动态难度递增、碰撞检测、最高分持久化等完整游戏机制。复古像素风格设计搭配深色主题，还原经典游戏体验。
+## 规则
 
----
+| 项目 | 说明 |
+|---|---|
+| 目标 | 控制蛇吃掉食物 |
+| 得分 | 每个食物 +10 |
+| 加速 | 每吃一个速度递增 |
+| 结束 | 撞墙或撞到自身 |
 
-## ✨ 核心特性
-
-- 🐍 **经典贪吃蛇玩法** — 方向键控制蛇身移动，吃食物增长
-- 📈 **动态难度** — 每吃一个食物速度递增，越玩越刺激
-- 🏆 **最高分记录** — localStorage 持久化存储，挑战自我
-- 🎨 **复古像素风格** — Courier New 字体 + 深色主题，怀旧感十足
-- 📱 **移动端支持** — 响应式虚拟方向键，触屏可玩
-- ⌨️ **键盘控制** — 方向键操控，手感流畅
-- 🧱 **碰撞检测** — 撞墙或撞自身即 Game Over
-- 🏗️ **OOP 架构** — ES6 Class 封装，代码可维护性强
-
----
-
-## 🛠️ 技术栈
-
-| 技术 | 用途 |
-|------|------|
-| HTML5 Canvas | 游戏渲染引擎 |
-| JavaScript (ES6+) | 游戏逻辑（Class 面向对象封装） |
-| CSS3 | 复古风格样式与响应式布局 |
-| localStorage | 最高分持久化存储 |
-| setInterval | 游戏主循环定时器 |
-
----
-
-## 🚀 快速开始
-
-### 前置条件
-
-- 现代浏览器（Chrome / Firefox / Safari / Edge）
-- 无需安装任何依赖
-
-### 安装步骤
+## 快速开始
 
 ```bash
-git clone https://github.com/aiyangtongxue/retro-games-hub.git
+git clone https://github.com/aiyangdie/retro-games-hub.git
 cd retro-games-hub
 ```
 
-### 运行命令
+三种运行方式：直接打开 `index.html`；VSCode Live Server；`python -m http.server 8080`。
 
-```bash
-# 方式一：直接打开
-start index.html
-
-# 方式二：VSCode Live Server（推荐）
-
-# 方式三：Python 简易服务器
-python -m http.server 8080
-```
-
-### 在线演示
-
-🔗 [复古贪吃蛇在线体验](https://aiyangtongxue.github.io/retro-games-hub)
-
----
-
-## 📂 项目结构
+## 项目结构
 
 ```
-retro-games-hub/
-├── index.html          # 游戏主页面
-├── css/
-│   └── style.css       # 复古风格样式与响应式布局
-├── js/
-│   └── game.js         # 游戏核心逻辑（SnakeGame Class）
-├── tcs.png             # 游戏截图
-├── .gitignore          # Git 忽略配置
-├── CNAME               # 自定义域名配置
-└── README.md           # 项目说明文档
+index.html      游戏主页面
+css/style.css   复古样式与响应式布局
+js/game.js      核心逻辑（SnakeGame Class）
 ```
 
----
+## 许可证
 
-## 🎮 游戏规则
-
-| 规则 | 说明 |
-|------|------|
-| 🎯 目标 | 控制蛇吃掉红色食物 |
-| 🏅 得分 | 每个食物 +10 分 |
-| ⚡ 加速 | 每吃一个食物速度递增 |
-| 💀 死亡 | 撞墙或撞到自身 |
-| 🏆 记录 | 最高分自动保存 |
-
----
-
-## 🤝 贡献与许可证
-
-欢迎提交 Issue 和 Pull Request 来帮助改进项目！
-
-本项目采用 **MIT License** 开源协议，详情请见 [LICENSE](LICENSE) 文件。
+仓库未附 LICENSE 文件，使用与分发请先联系作者确认。
