@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/covers/14-retro-games-hub.jpg" alt="retro-games-hub 项目封面" width="100%"></p>
+
 <div align="center">
 
 # 🐍 复古贪吃蛇
